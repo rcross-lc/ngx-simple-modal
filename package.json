@@ -8,6 +8,7 @@
     "demo-ng8": "cd demo-ng8 && npm i && ng serve",
     "demo-ng16": "cd demo-ng16 && npm i && ng serve",
     "lint": "eslint -c .eslintrc.js --ext .ts src/simple-modal/**/*.ts",
+    "prepare": "npm run build",
     "prepublish": "npm run build",
     "build": "npm run lint && ng-packagr --config src/tsconfig.build.json",
     "postbuild": "npm run prepare-package",
